@@ -42,13 +42,16 @@ The data has been downloaded, unzipped and stored locally. This is done with fun
 These steps are included as code description in program `run_analysis.R`.
 
 ### Step 1
-First, We will then read the data from the data files, from the test folder, `X_text.txt`, `y_text.txt`, `subject_test.txt`, and from the train folder, `X_train.txt`, `y_train.txt` and `subject_train.txt`.
+First, We will then read the data from the data files, from the test folder, `X_text.txt`, `y_text.txt`, `subject_test.txt`, and from the train folder, `X_train.txt`, `y_train.txt` and `subject_train.txt`, and from the main folder, `features.txt` and `activity_labels.txt`.
 
 ### Step 2
-Then, the file `activity_labels.txt` will be used to link the class labels with their activity name and the `features.txt` file will be used to label all the features. The columns are then named with descriptive names, like `Activities` and `Subjects`.
+We will extract the mean and standard deviation.
 
 ### Step 3
-On the next step, we will merge the two datasets, test and train, into one dataset, and we will then get the mean and standard deviations from this merged set.
+We will assign descriptive labels and names.
 
 ### Step 4
+On the next step, we will merge the two datasets, test and train, into one dataset.
+
+### Step 5
 Finally, we will create a new file with the desired results, an independent tidy data set with the average of each variable for each activity and each subject. This will be called `tidy.txt`.
